@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
         - name: springboot-k8s-mysql
-          image: nemchinovrp/springboot-k8s-deployment:0.0.1
+          image: nemchinovrp/springboot-k8s-deployment:0.0.2
           ports:
             - containerPort: 8080
           env:   # Setting Enviornmental Variables
