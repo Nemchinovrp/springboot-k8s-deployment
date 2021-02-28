@@ -19,6 +19,11 @@ public class EmployeeController {
     @Autowired
     private EmployeeRepository employeeRepository;
 
+    @GetMapping("/test")
+    public String test() {
+        return "test + success";
+    }
+
     @PostMapping("/employees")
     public Employee addEmployee(@RequestBody Employee employee) {
         return employeeRepository.save(employee);
